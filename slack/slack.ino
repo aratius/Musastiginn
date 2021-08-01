@@ -14,13 +14,13 @@ StaticJsonDocument<capacity> json_request;
 // stringify
 char buffer[255];
 
-const char *host = "https://hooks.slack.com/services/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";
+const char *host = "https://hooks.slack.com/services/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";
 
 // slackにPOSTする
 void SendMessage () {
 	M5.Lcd.println("Send Message!");
 
-	json_request["text"] = "ボタンが押されました。";
+	json_request["text"] = "きょうは08/01";
 	serializeJson(json_request, buffer, sizeof(buffer));
 
 	// HTTP通信 -----------------
@@ -63,4 +63,3 @@ void loop() {
 		SendMessage();
   }
 }
-

@@ -1,6 +1,6 @@
 {
     "port": "/dev/tty.usbserial-3552FA2081",
     "configuration": "PartitionScheme=default,UploadSpeed=1500000,DebugLevel=none",
-    "board": "espressif:esp32:m5stick-c",
+    "board": "esp32:esp32:m5stick-c",
     "sketch": "slack.ino"
 }
